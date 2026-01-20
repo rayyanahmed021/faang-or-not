@@ -2,7 +2,8 @@
 
 **FAANG or FAKE** is an interactive quiz application that challenges users to identify whether a software engineer's resume belongs to a top-tier tech company (FAANG) or not. Built with **Next.js**, **Supabase**, and **Tailwind CSS**, it features a "Recruiter Simulator" experience with real-world resume data, secure image handling, and competitive game mechanics.
 
-![Project Preview](https://placehold.co/1200x600/0f172a/ffffff?text=FAANG+or+FAKE+Preview) ## ✨ Key Features
+![Project Preview](https://placehold.co/1200x600/0f172a/ffffff?text=FAANG+or+FAKE+Preview) 
+## ✨ Key Features
 
 * **Recruiter Simulator Mode**: Analyze real anonymized resumes and make "Hired" or "Rejected" decisions.
 * **Interactive Resume Viewer**:
