@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FAANG or FAKE? - Tech Resume Simulator 🚀
 
-## Getting Started
+**FAANG or FAKE** is an interactive quiz application that challenges users to identify whether a software engineer's resume belongs to a top-tier tech company (FAANG) or not. Built with **Next.js**, **Supabase**, and **Tailwind CSS**, it features a "Recruiter Simulator" experience with real-world resume data, secure image handling, and competitive game mechanics.
 
-First, run the development server:
+![Project Preview](https://placehold.co/1200x600/0f172a/ffffff?text=FAANG+or+FAKE+Preview) ## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Recruiter Simulator Mode**: Analyze real anonymized resumes and make "Hired" or "Rejected" decisions.
+* **Interactive Resume Viewer**:
+  * **Pan & Zoom**: Custom-built controls to inspect resume details with mouse drag or touch gestures.
+  * **Mobile Optimized**: Full touch support with "prevent-scroll" logic for seamless mobile play.
+* **Secure Image Proxy**:
+  * **Zero-Trust Storage**: Resumes are stored in a **private** Supabase bucket.
+  * **Server-Side Signing**: Images are served via a Next.js API proxy (`/api/proxy-image`) that generates temporary signed URLs, preventing direct link sharing or scraping.
+* **Live Game State**:
+  * **Real-time Stats**: Tracks correct/incorrect streaks and overall accuracy.
+  * **Visual Feedback**: High-end "Glassmorphism" UI with "Hired/Rejected" stamps and atmospheric glow effects.
+* **Educational Verdicts**: Provides context-aware feedback (e.g., specific advice for spotting 1st vs. 2nd-year talent) based on the final score.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/) + `tailwind-animate`
+* **Backend & Auth**: [Supabase](https://supabase.com/) (PostgreSQL + Storage)
+* **Language**: TypeScript
+* **Deployment**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
